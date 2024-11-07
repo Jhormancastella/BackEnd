@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD de Árbitros</title>
+</head>
+<body>
+    <h1>Formulario de Registro de Árbitros</h1>
+    <form id="formularioArbitros">
+        <input type="hidden" id="arbitro_id"> <!-- Campo oculto para el ID del árbitro -->
+        <input type="text" id="nombre_completo" placeholder="Nombre Completo" required><br>
+        <input type="date" id="fecha_nacimiento" required><br>
+        <input type="text" id="documento_identidad" placeholder="Documento de Identidad" required><br>
+        <input type="text" id="telefono" placeholder="Teléfono" required><br>
+        <input type="text" id="direccion_residencia" placeholder="Dirección de Residencia" required><br>
+        <input type="text" id="categoria" placeholder="Categoría del Árbitro" required><br>
+        <input type="text" id="foto" placeholder="Foto (URL o Base64)" required><br>
+        <button type="submit">Registrar Árbitro</button>
+    </form>
+
+    <div id="listaArbitros"></div>
+
+    <script src="registro.js"></script>
+</body>
+</html>
