@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD de Jugadores</title>
+</head>
+<body>
+    <h1>Formulario de Registro de Jugadores</h1>
+    <form id="formularioJugador">
+        <input type="hidden" id="jugador_id"> <!-- Campo oculto para el ID del jugador -->
+        <input type="text" id="nombre_completo" placeholder="Nombre Completo" required><br>
+        <input type="date" id="fecha_nacimiento" required><br>
+        <input type="text" id="documento_identidad" placeholder="Documento de Identidad" required><br>
+        <input type="text" id="telefono" placeholder="Teléfono" required><br>
+        <input type="text" id="direccion_residencia" placeholder="Dirección de Residencia" required><br>
+        <input type="text" id="equipo" placeholder="Equipo" required><br>
+        <input type="text" id="posicion" placeholder="Posición" required><br>
+        <input type="text" id="representante_nombre" placeholder="Nombre del Representante" required><br>
+        <input type="text" id="representante_telefono" placeholder="Teléfono del Representante" required><br>
+        <input type="text" id="foto" placeholder="Foto (URL o Base64)" required><br>
+        <button type="submit">Registrar Jugador</button>
+    </form>
+
+    <div id="listaJugadores"></div>
+
+<script src="registro.js"></script>
+</body>
+</html>
